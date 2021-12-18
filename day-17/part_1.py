@@ -13,7 +13,7 @@ def works(v_x, v_y, x_min, x_max, y_min, y_max):
             return True
         x += v_x
         y += v_y
-        v_x -= 1
+        v_x = max(0, v_x - 1)
         v_y -= 1
 
     return False
