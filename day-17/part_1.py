@@ -1,5 +1,5 @@
 """
-Advent of Code 2021 | Day 16 | Part 2
+Advent of Code 2021 | Day 17 | Part 1
 """
 import sys
 import math
@@ -33,7 +33,7 @@ def main():
     for v_x in range(x_max + 1):
         for v_y in range(y_min, -y_min):
             if works(v_x, v_y, x_min, x_max, y_min, y_max):
-                best_height = max(max(v_y * (v_y + 1) // 2, 0), best_height)
+                best_height = max(v_y * (v_y + 1) // 2, best_height)
 
     print(best_height)
 
